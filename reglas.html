@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora ADSO - Reglas Técnicas</title>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Menú principal de navegación">
+            <p>
+                [ <a href="index.html">Vista 1: Información General</a> ] | 
+                [ <a href="reglas.html" aria-current="page"><strong>Vista 2: Reglas y Lineamientos</strong></a> ] | 
+                [ <a href="trazabilidad.html">Vista 3: Tabla de Trazabilidad</a> ]
+            </p>
+        </nav>
+        <hr>
+        <h1>Control de Trabajo Diario - ADSO</h1>
+        <p>Centro Industrial de Mantenimiento Integral (CIMI) - SENA</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-reglas">
+            <h2 id="titulo-reglas">Las Cuatro Reglas de Oro de la Bitácora</h2>
+            <p>Principios de calidad y rigor técnico exigidos en la formación profesional.</p>
+
+            <!-- Cuadrícula nativa de Reglas en HTML Puro -->
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <caption>Matriz de Principios Técnicos Obligatorios</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" width="10%">N°</th>
+                        <th scope="col" width="30%">Principio Técnico</th>
+                        <th scope="col" width="60%">Definición y Restricción Obligatoria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">1</td>
+                        <th scope="row">Responsabilidad Única (SRP)</th>
+                        <td>Cada fila documenta un solo evento, tarea o impedimento indivisible. No se aglomeran tareas múltiples en un solo registro.</td>
+                    </tr>
+                    <tr>
+                        <td align="center">2</td>
+                        <th scope="row">Cero Adjetivos Subjetivos</th>
+                        <td>Prohibido el uso de opiniones o lenguaje coloquial ("estuvo bien", "fue difícil"). Se redactan estrictamente hechos técnicos objetivos.</td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <th scope="row">Inmutabilidad Histórica</th>
+                        <td>Los datos históricos pasados no se borran ni sobrescriben. Todo ajuste se registra como una nueva entrada indicando: "Corrección al ID [X]".</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <th scope="row">Trazabilidad de Impedimentos</th>
+                        <td>Al existir bloqueos se define: [Qué ejecutó] + [Fallo presentado] + [Mitigación]. Si no existieron trabas, se consigna: "Sin impedimentos operativos".</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="titulo-columnas">
+            <h2 id="titulo-columnas">Guía Técnica de Llenado por Columna</h2>
+            <p>Especificación de los datos requeridos en cada campo de la bitácora.</p>
+
+            <!-- Cuadrícula de Especificación de Columnas en HTML Puro -->
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <caption>Especificación del Formato de las Siete Columnas Oficiales</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" width="25%">Nombre de Columna</th>
+                        <th scope="col" width="75%">Descripción y Formato Técnico Esperado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">ID</th>
+                        <td>Número consecutivo único correlativo para cada actividad (ej. 1, 2, 3...).</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Timestamp</th>
+                        <td>Rango horario exacto de ejecución en formato estandarizado <code>YYYY-MM-DD HH:MM - HH:MM</code>.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Autoría (Responsable)</th>
+                        <td>Nombre completo del aprendiz responsable de ejecutar la actividad.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Objeto Técnico</th>
+                        <td>Descripción técnica objetiva iniciada con verbo en infinitivo o sustantivo de acción que delimita el alcance.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Evidencia de Ejecución</th>
+                        <td>Nombre exacto del archivo, enlace a commit, Pull Request o documentación comprobable.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Impedimentos / Blockers</th>
+                        <td>Registro técnico de la causa de bloqueo o la declaración formal "Sin impedimentos operativos".</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Plan de Acción</th>
+                        <td>Acción correctiva tomada, mitigación o próxima tarea programada para dar continuidad al trabajo.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p><small>© 2026 Servicio Nacional de Aprendizaje (SENA) - Evidencia de Transferencia de Conocimiento GFPI-F-135 V04</small></p>
+    </footer>
+
+</body>
+</html>
